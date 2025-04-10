@@ -18,7 +18,7 @@ function RedButton(props: { text: string, parentFn?: () => void }) {
                 margin: "10px",
             }} onClick={() => {
                 setCount((count) => count + 1);
-                props.parentFn && props.parentFn();
+                props.parentFn && props.parentFn.call(null);
             }}>
                 { props.text }
             </button>

@@ -1,18 +1,11 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-// component
-import RedButton from "./component/RedButton.tsx";
-import MyComponent from "./component/MultiComponent.tsx";
+// import TestShopCar from "./component/TestShopCar.tsx"; 学习useState
+// import TestUseEffect from "./component/TestUseEffect.tsx"; 学习useEffect
+import TestUseContext from "./component/TestUseContext.tsx";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  function parentAppFn() {
-      console.log("parent App Count");
-  }
 
   return (
     <>
@@ -26,12 +19,9 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <RedButton text="我是父组件的text" parentFn={parentAppFn} />
-
-        <MyComponent/>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+        {/*<TestShopCar/>*/}
+        {/*<TestUseEffect/>*/}
+        <TestUseContext/>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
