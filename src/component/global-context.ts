@@ -3,7 +3,6 @@ import React from "react";
 interface GlobalContextProps {
     name: string;
     setName: (name: string) => void;
-
     log: () => void,
 }
 
