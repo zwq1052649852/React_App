@@ -1,9 +1,12 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import TestUseMemo from "./component/TestUseMemo/TestUseMemo.tsx";
+// import TestUseReducer from "./component/TestUseReducer.tsx";
 // import TestShopCar from "./component/TestShopCar.tsx"; 学习useState
-import TestUseEffect from "./component/TestUseEffect.tsx";
+// import TestUseEffect from "./component/TestUseEffect.tsx";
 // import TestUseContext from "./component/TestUseContext.tsx";
+// import TestUseCallback from "./component/TestUseCallback/TestUseCallback.tsx";
 
 function App() {
 
@@ -19,9 +22,12 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        {/*<TestShopCar/>*/}
-        <TestUseEffect/>
-        {/*<TestUseContext/>*/}
+          {/*<TestShopCar/>*/}
+          {/*<TestUseEffect/>*/}
+          {/*<TestUseContext/>*/}
+          {/*{<TestUseReducer/>}*/}
+          {/*{<TestUseCallback/>}*/}
+          {<TestUseMemo/>}
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

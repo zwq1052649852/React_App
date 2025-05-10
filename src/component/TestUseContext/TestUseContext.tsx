@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
-import GlobalContext from "./global-context.ts";
-import AnotherGlobalContext from "./another-global-context.ts";
+import GlobalContext from "../global-context.ts";
+import AnotherGlobalContext from "../another-global-context.ts";
 
 export default function TestUseContext() {
     const [name, setName] = useState("james_wicky");
