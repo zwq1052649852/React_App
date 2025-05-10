@@ -11,6 +11,7 @@ export default function TestUseEffect() {
         const timer = setInterval(() => {
             setEffectCount((effectCount) => effectCount + 2);
         }, 1000);
+        console.log("start")
 
         // 组件卸载componentWillUnmount时执行
         // 清理函数主要做的是取消订阅，清除定时器，取消网络请求等，不能在这里执行有副作用的操作
@@ -19,7 +20,7 @@ export default function TestUseEffect() {
             // 每次调用副作用函数前都会执行该清理函数
             clearInterval(timer);
         }
-    }, [])
+    }, [count])
 
     return (<div>
         <div onClick={() => setCount((count) => count + 1)}>i m effect Click me</div>

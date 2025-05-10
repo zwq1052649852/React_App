@@ -2,8 +2,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 // import TestShopCar from "./component/TestShopCar.tsx"; 学习useState
-// import TestUseEffect from "./component/TestUseEffect.tsx"; 学习useEffect
-import TestUseContext from "./component/TestUseContext.tsx";
+import TestUseEffect from "./component/TestUseEffect.tsx";
+// import TestUseContext from "./component/TestUseContext.tsx";
 
 function App() {
 
@@ -20,8 +20,8 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         {/*<TestShopCar/>*/}
-        {/*<TestUseEffect/>*/}
-        <TestUseContext/>
+        <TestUseEffect/>
+        {/*<TestUseContext/>*/}
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
